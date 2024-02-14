@@ -1,0 +1,113 @@
+
+:root {
+    --black: #131212;
+    --gray: #3E3E3E;
+}
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--gray);
+    color: #C2C2C2;
+    font-family: 'Inter', monospace;
+    font-size: 13px;
+    height: 5%;
+    padding: 3px;
+    border-radius: 10px 10px 0 0;
+}
+
+h5 {
+    margin: 0;
+}
+
+#terminal {
+    display: flex;
+    flex-direction: column;
+    width: 726px;
+    height: 374px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    background-color: var(--black);
+    color: white;
+}
+#terminal-output {
+    resize: none;
+    border: none;
+    overflow: auto;
+    overflow-x: hidden;
+    outline: none;
+    background-color: var(--black);
+    height: 350px;
+    color: white;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+#terminal-output::-webkit-scrollbar {
+    width: 10px;
+}
+
+#terminal-output::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--gray);
+}
+
+#terminal-output::-webkit-scrollbar-thumb:hover {
+    background-color: #C2C2C2;
+    
+}
+
+#terminal-input {
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: var(--gray);
+    color: #D9D9D9;
+    font-size: 18px;
+}
+
+.dots {
+    display: flex;
+    position: absolute;
+    left: 10px;
+}
+
+.dots * {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.dot-red {
+    background-color: #E52A2A;
+}
+  
+.dot-yellow {
+    background-color: #E5BC2A;
+}
+  
+.dot-green {
+    background-color: #2AE53D;
+}
