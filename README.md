@@ -1,2 +1,2 @@
-# web-terminal
-recruitment task
+# Usage
+open index.html with live server
