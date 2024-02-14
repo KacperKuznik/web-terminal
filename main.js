@@ -80,6 +80,7 @@ function processCommand(command) {
             }
             break;
     }
+    output.scrollTop = output.scrollHeight;
 }
 
 function autocomplete() {
